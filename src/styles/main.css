@@ -1,0 +1,24 @@
+#foodList {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+.section {
+    border: 2px solid rgb(37, 32, 32);
+    padding: 10px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center
+}
+
+p {
+    font-size: 14px;
+    color: blue;
+    text-align: left;
+}

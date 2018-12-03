@@ -30,5 +30,12 @@ let foodFunction = (name, type, ethnicity) => {
     console.log(foodFunction);
 };
 
-// alternate test function
-console.log(foodFunction("apple", "fruit", "america"));
+fetch("http://localhost:8088/food")
+    .then(foods => foods.json())
+    .then(parsedFoods => {
+        parsedFoods.forEach(function(parsedFood) { 
+            foodFunction(parsedFood.name, parsedFood.type, parsedFood.ethnicity);
+            (console.table(parsedFood)
+            )}
+        );
+    })
