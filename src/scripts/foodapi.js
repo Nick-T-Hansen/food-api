@@ -39,3 +39,11 @@ fetch("http://localhost:8088/food")
             )}
         );
     })
+
+    fetch("https://world.openfoodfacts.org/api/v0/product/0011150479547.json")
+    .then(response => response.json())
+    .then(productInfo => {
+        // Use it here
+    })
+
+    // You will need to use the `forEach` array method to iterate your foods. Inside that `forEach`, you will need to perform another `fetch` to get the additional information. The barcode value must be interpolated inside the URL for the inner fetch.
