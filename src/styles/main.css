@@ -2,7 +2,6 @@
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
 
 }
 
@@ -20,5 +19,5 @@ h2 {
 p {
     font-size: 14px;
     color: blue;
-    text-align: left;
+    text-align: center;
 }
